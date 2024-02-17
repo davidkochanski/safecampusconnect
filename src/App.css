@@ -1,0 +1,159 @@
+:root {
+    --dark: #131515;
+    --dark2: #2B2C28;
+    --primary: #339989;
+    --secondary: #7DE2D1;
+    --light: #FFFAFB;
+    --dark3: #4B635F;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--secondary);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary);
+    border-color: var(--primary);
+}
+
+.btn-primary:active {
+    background-color: var(--primary) !important;
+    border-color: var(--secondary) !important;
+}
+
+.navbar {
+    background-color: var(--dark2) !important;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    opacity: 1;
+    z-index: 621000;
+    box-shadow: 0 2px 1px var(--light) !important;
+    padding: 0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.router-link-exact-active {
+    border-bottom-color: var(--secondary) !important;
+}
+
+.container {
+    all: unset;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    max-width: unset;
+}
+
+.logo {
+    background-image: url(../public/logo.png);
+    width: 75px;
+    height: 75px;
+}
+
+.hero-content {
+    position: absolute;
+    z-index: 100000;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-text {
+    font-family: "Inconsolata", monospace;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 170px;
+    font-size: 30px;
+    font-weight: 900;
+    padding-bottom: 100px;
+}
+
+.hero-text h2 {
+    font-family: monospace;
+    font-weight: 100;
+    font-size: 100px;
+    opacity: 0.75;
+    text-shadow: var(--light) 0 0 0px, var(--light) 0 0 0px, var(--light) 0 0 0px, var(--light) 0 0 10px;
+}
+
+.hero {
+    all:unset;
+    display: block;
+    width: 100%;
+    height: 100vh !important;
+    text-align: center;
+    position: relative;
+
+    background: url(../public/circles.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-bg {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    font-size: 500px;
+    font-weight: 900;
+    text-shadow: 10px 10px 10px black;
+    opacity: 0.25;
+    color: var(--light) !important;
+    position: relative;
+}
+
+
+.spinner {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.map-container {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--dark);
+}
+
+hr {
+    all: unset;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    padding-top: 100px;
+    background: none;
+}
