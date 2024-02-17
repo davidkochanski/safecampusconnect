@@ -16,6 +16,7 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
+  Forums
 } from "reactstrap";
 
 import { useAuth0 } from "@auth0/auth0-react";
@@ -76,6 +77,18 @@ const NavBar = () => {
                     activeClassName="router-link-exact-active"
                   >
                     Friends
+                  </NavLink>
+                </NavItem>
+              )}
+              {isAuthenticated && (
+                <NavItem>
+                  <NavLink
+                    tag={RouterNavLink}
+                    to="/forums"
+                    exact
+                    activeClassName="router-link-exact-active"
+                  >
+                    Forums
                   </NavLink>
                 </NavItem>
               )}

@@ -75,6 +75,7 @@ body {
     z-index: 100000;
     width: 100%;
     height: 100%;
+
 }
 
 .hero-text {
@@ -86,28 +87,33 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 170px;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 900;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
+    color: white;
+    text-shadow: 4px 4px black;
+
 }
 
 .hero-text h2 {
     font-family: monospace;
     font-weight: 100;
     font-size: 100px;
-    opacity: 0.75;
     text-shadow: var(--light) 0 0 0px, var(--light) 0 0 0px, var(--light) 0 0 0px, var(--light) 0 0 10px;
+    color: var(--dark2);
+
 }
 
 .hero {
     all:unset;
     display: block;
     width: 100%;
-    height: 100vh !important;
+    height: calc(100vh - 100px) !important;
     text-align: center;
     position: relative;
 
-    background: url(../public/circles.svg);
+    background: url(../public/bg1.webp);
+    backdrop-filter: blur(10px);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -119,7 +125,7 @@ body {
     font-size: 500px;
     font-weight: 900;
     text-shadow: 10px 10px 10px black;
-    opacity: 0.25;
+    opacity: 0.5;
     color: var(--light) !important;
     position: relative;
 }
@@ -156,4 +162,96 @@ hr {
 main {
     padding-top: 100px;
     background: none;
+}
+
+.forums-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+    padding: 50px;
+
+}
+
+.forum-post {
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.forum-post-header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.forum-post-header h4 {
+    font-weight: normal;
+    font-size: 16px;
+    margin-left: auto;
+    
+}
+
+.forum-post p {
+    padding: 25px;
+    margin-bottom: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.forum-post:hover {
+    box-shadow: var(--secondary) 0 0 10px,var(--secondary) 0 0 10px,var(--secondary) 0 0 10px,var(--secondary) 0 0 10px,var(--secondary) 0 0 10px,var(--secondary) 0 0 10px,var(--secondary) 0 0 10px;
+
+}
+
+
+.post-container {
+    max-width: 800px;
+    margin: 50px auto;
+
+}
+
+.post {
+    border: 2px solid var(--dark2);
+    box-shadow: 5px 5px black;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.post h2 {
+    padding: 25px;
+    border-bottom: 1px solid gray;
+
+}
+
+.post h4 {
+    padding-left: 25px;
+    font-size: 18px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+
+.post p {
+    padding: 30px;
+}
+
+.post-container button {
+    all: unset;
+    background-color: var(--secondary);
+    padding: 10px 30px;
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.post-container button:hover {
+    border: 2px solid var(--secondary);
+    background-color: var(--primary);
 }

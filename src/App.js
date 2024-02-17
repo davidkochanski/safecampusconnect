@@ -11,6 +11,8 @@ import ExternalApi from "./views/ExternalApi";
 import { useAuth0 } from "@auth0/auth0-react";
 import history from "./utils/history";
 import Maps from "./components/Maps";
+import Forums from "./components/Forums";
+import Post from "./components/Post";
 
 // styles
 import "./App.css";
@@ -39,6 +41,8 @@ const App = () => {
             <Route path="/" exact component={isAuthenticated ? Maps : Home} />
             <Route path="/profile" component={Profile} />
             <Route path="/external-api" component={ExternalApi} />
+            <Route path="/forums" component={Forums} />
+            <Route path="/post/:postId" component={Post} />
           </Switch>
         </main>
         <Footer />
