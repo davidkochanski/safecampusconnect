@@ -44,7 +44,7 @@ const NavBar = () => {
         <Container>
           <NavbarBrand className="logo" />
           <NavbarToggler onClick={toggle} />
-          <Collapse isOpen={isOpen} navbar>
+          <Collapse isOpen={isOpen} onClick={toggle} navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>
                 <NavLink

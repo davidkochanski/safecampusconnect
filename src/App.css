@@ -89,12 +89,12 @@ body {
     font-size: 40px;
     font-weight: 900;
     padding-bottom: 0px;
-    color: var(--dark2);
+    color: white;
 
 }
 
 .hero-text h2 {
-    font-family: monospace;
+    font-family: monospace !important;
     font-weight: 100;
     font-size: 100px;
     text-shadow: var(--light) 0 0 0px, var(--light) 0 0 0px, var(--light) 0 0 0px, var(--light) 0 0 10px;
@@ -106,6 +106,7 @@ body {
     all:unset;
     display: block;
     height: calc(100vh - 100px) !important;
+    overflow: hidden;
     text-align: center;
     position: relative;
 
@@ -163,6 +164,7 @@ hr {
 main {
     padding-top: 100px;
     background: none;
+    overflow-x: hidden;
 }
 
 .forums-list {
@@ -223,6 +225,7 @@ main {
     box-shadow: 5px 5px black;
     border-radius: 16px;
     overflow: hidden;
+    margin: 10px;
 }
 
 .post h2 {
@@ -273,12 +276,12 @@ main {
   
 
 .glassify {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(27, 27, 27, 0.2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(10, 10, 10, 0.3);
 }
 
 @media screen and (max-width: 760px) {
@@ -287,5 +290,45 @@ main {
     }
     nav.navbar {
         padding: 0 5px
+    }
+
+    .forums-list {
+        padding: 10px;
+    }
+
+    .forum-post .forum-post-header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 75px;
+    }
+
+    .forum-post .forum-post-header h3 {
+        font-size: 16px;
+        white-space: wrap;
+    }
+
+    .forum-post .forum-post-header h4 {
+        font-size: 14px;
+        white-space: wrap;
+        margin: unset;
+    }
+
+    .hero-bg {
+        font-size: 200px !important;
+        line-height: calc(100vh - 100px);
+    }
+
+    .hero-text h2 {
+        font-size: 50px;
+    }
+
+    .hero-text p {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .hero-text {
+        gap: 100px;
     }
 }
