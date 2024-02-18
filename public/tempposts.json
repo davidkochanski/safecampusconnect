@@ -2,56 +2,54 @@
     {
         "id": 1,
         "title": "Welcome to SC^2!!",
-        "content": "Hello and a warm welcome to all new members! This is our very first post in what we hope will become a thriving online community. This forum is a space for you to introduce yourself, share your interests, and connect with others. Whether you're here to seek advice, share expertise, or just chat about your day, we're excited to have you with us. Don't hesitate to start new discussions, ask questions, and provide answers. Let's build a supportive and engaging community together!",
+        "content": "Hello and a warm welcome to all new members! This is our very first post in what we hope will become a thriving online community...",
         "date": "2024-02-01T09:00:00.000Z",
         "author": "Admin",
-        "lat": 45.4444101,
-        "lng":-75.69387789999999
+        "lat": 43.554169907378196,
+        "lng": -79.6605949101189,
+        "colour": "orange"
     },
     {
         "id": 2,
         "title": "I saw some deer!!!!!",
-        "content": "This morning, while walking through the park, I was lucky enough to encounter a small group of deer grazing near the trail. I love deerhacks III :))) No wonder it's called that lol. It's moments like these that remind me of the beauty and serenity of nature.",
+        "content": "This morning, while walking through the park, I was lucky enough to encounter a small group of deer grazing near the trail...",
         "date": "2024-02-02T10:00:00.000Z",
         "author": "Moderator",
-        "lat": 45.4444101,
-        "lng": -75.69387789999999
+        "lat": 43.56060615554313,
+        "lng": -79.67068387388183,
+        "colour": "yellow"
     },
-    
     {
         "id": 3,
         "title": "Weekly Discussion Thread",
-        "content": "Join our vibrant weekly discussion! This week, we dive into the captivating topic of 'The Future of Technology'. What innovations do you think will shape our world in the coming years? From artificial intelligence to space travel, share your thoughts, predictions, and hopes for the future of technology. Engage with fellow tech enthusiasts, debate on possible advancements, and explore the implications of technological growth. Let's brainstorm the future together!",
+        "content": "Join our vibrant weekly discussion! This week, we dive into the captivating topic of 'The Future of Technology'...",
         "date": "2024-02-03T11:30:00.000Z",
         "author": "TechGuru",
-        "lat": 45.4444101,
-        "lng":-75.69387789999999
+        "lat": 43.542807643988375,
+        "lng": -79.66334984464599,
+        "colour": "green"
+
     },
     {
         "id": 4,
         "title": "Forum Rules and Guidelines",
-        "content": "Welcome to our community! To ensure a positive and respectful environment for all, please make sure to read and adhere to our rules and guidelines. These guidelines are in place to maintain a safe and enjoyable experience for everyone. They cover our policies on acceptable content, behavior standards, and the process for reporting issues. Familiarizing yourself with these rules helps keep our community a great place for discussion and connection. Your cooperation is greatly appreciated!",
+        "content": "Welcome to our community! To ensure a positive and respectful environment for all, please make sure to read and adhere to our rules and guidelines...",
         "date": "2024-02-04T08:00:00.000Z",
         "author": "CommunityManager",
-        "lat": 45.4444101,
-        "lng":-75.69387789999999
+        "lat": 43.54312682534381,
+        "lng": -79.66459047511667,
+        "colour": "blue"
+
+
     },
     {
         "id": 5,
         "title": "Share Your Projects",
-        "content": "Have you been working on something exciting? Whether it's a personal hobby, a professional project, or just a fun experiment, we'd love to hear about it! Share your projects with the community here and get feedback, suggestions, and support. This is a great opportunity to showcase your work, connect with like-minded individuals, and perhaps even collaborate on future endeavors. Don't be shy, let the community see what you've been up to!",
+        "content": "Have you been working on something exciting? Whether it's a personal hobby, a professional project, or just a fun experiment...",
         "date": "2024-02-05T15:45:00.000Z",
         "author": "CreativeUser",
-        "lat": 45.4444101,
-        "lng":-75.69387789999999
-    },
-    {
-        "id": 6,
-        "title": "Feedback and Suggestions",
-        "content": "We highly value your feedback and suggestions for improving the forum. Your input is crucial in helping us create a better experience for all members. Whether it's about the forum's design, features, or community engagement, we want to hear your thoughts. Let us know what you love, what you think could be improved, and any new ideas you have. Together, we can make this forum a fantastic place for everyone to enjoy and benefit from!",
-        "date": "2024-02-06T12:00:00.000Z",
-        "author": "FeedbackFan",
-        "lat": 45.4444101,
-        "lng":-75.69387789999999
+        "lat": 43.551553466191095,
+        "lng": -79.65937119467205,
+        "colour": "purple"
     }
 ]

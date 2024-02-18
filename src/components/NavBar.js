@@ -57,7 +57,7 @@ const NavBar = () => {
                   {!isAuthenticated ? "Home" : "Maps" }
                 </NavLink>
               </NavItem>
-              {isAuthenticated && (
+              {/* {isAuthenticated && (
                 <NavItem>
                   <NavLink
                     tag={RouterNavLink}
@@ -68,7 +68,7 @@ const NavBar = () => {
                     Friends
                   </NavLink>
                 </NavItem>
-              )}
+              )} */}
               {isAuthenticated && (
                 <NavItem>
                   <NavLink

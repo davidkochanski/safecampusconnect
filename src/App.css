@@ -281,6 +281,7 @@ button:active {
 
 .forum-post p {
     padding: 25px;
+    padding-top: 10px;
     margin-bottom: 0;
     white-space: nowrap;
     overflow: hidden;
@@ -338,6 +339,12 @@ button:active {
     margin-left: 10px;
 
     transition: scale 0.25s ease;
+}
+
+.forum-post h2 {
+    font-size: 12px;
+    margin-left: 25px;
+    margin-top: 10px;
 }
 
 .navbar-toggler-icon {

@@ -85,11 +85,11 @@ const Forums = () => {
                 {posts.map(post => (
                     <Link to={`/post/${post.id}`} key={post.id} style={{ textDecoration: 'none', color: 'inherit' }}>
                         <div className="forum-post">
-                            <div className='forum-post-header' style={{ backgroundColor: stringToColor(post.title) }}>
+                            <div className='forum-post-header' style={{ backgroundColor: post.colour }}>
                                 <h3>{post.title}</h3>
                                 <h4>By <span style={{ fontWeight: "bold" }}>{post.author}</span> at {formatDateNicely(new Date(post.date))}</h4>
                             </div>
-                            {/* <p>{post.address}</p> */}
+                            <h2>{post.address}</h2>
                             <p>{post.content}</p>
                         </div>
                     </Link>

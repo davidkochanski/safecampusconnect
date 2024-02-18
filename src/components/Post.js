@@ -66,7 +66,7 @@ const Post = () => {
     <>
     <div className='post-container'>
         <div className="post">
-        <h2 style={{backgroundColor: stringToColor(post.title)}}>{post.title}</h2>
+        <h2 style={{backgroundColor: post.colour}}>{post.title}</h2>
         <h4>By {post.author} at {formatDateNicely(new Date(post.date))}</h4>
         <p>{post.content}</p>
         </div>
