@@ -3,7 +3,7 @@ import Loading from "./Loading";
 
 export default function Maps() {
     const [loc, setLoc] = useState({lat: null, lng: null});
-    const [seeingFriends, setSeeingFriends] = useState(true);
+    const [seeingFriends, setSeeingFriends] = useState(false);
 
     const additionalMarkers = {}
 
