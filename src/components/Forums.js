@@ -89,7 +89,7 @@ const Forums = () => {
                                 <h3>{post.title}</h3>
                                 <h4>By <span style={{ fontWeight: "bold" }}>{post.author}</span> at {formatDateNicely(new Date(post.date))}</h4>
                             </div>
-                            <p>{post.address}</p>
+                            {/* <p>{post.address}</p> */}
                             <p>{post.content}</p>
                         </div>
                     </Link>

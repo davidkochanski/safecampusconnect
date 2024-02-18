@@ -196,6 +196,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .map {
@@ -326,7 +327,7 @@ button:active {
     padding: 30px;
 }
 
-.post-container button {
+.post-container button, .toggle-friends {
     all: unset;
     color: white;
     background-color: var(--primary);
@@ -335,18 +336,20 @@ button:active {
     border-radius: 8px;
     margin-top: 20px;
     margin-left: 10px;
+
+    transition: scale 0.25s ease;
 }
 
 .navbar-toggler-icon {
     color: white !important;
 }
 
-.post-container button:hover {
+.post-container button:hover, .toggle-friends:hover {
     border: 2px solid var(--primary);
     background-color: var(--secondary);
 }
 
-.post-container button:active {
+.post-container button:active, .toggle-friends:active {
     border: 2px solid var(--secondary);
     background-color: var(--primary);
 }

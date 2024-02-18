@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 
 export default function Maps() {
     const [loc, setLoc] = useState({lat: null, lng: null});
+    const [seeingFriends, setSeeingFriends] = useState(true);
 
     const additionalMarkers = {}
 
@@ -58,15 +59,29 @@ export default function Maps() {
         { lat: 43.551553466191095, lng: -79.65937119467205 }
     ]);
 
+    const lol = createMarkerString([
+        { lat: 43.554169907378196, lng: -79.6605949101189 },
+        { lat: 43.56060615554313, lng: -79.67068387388183 },
+        { lat: 43.542807643988375, lng: -79.66334984464599 },
+        { lat: 43.54312682534381, lng: -79.66459047511667 },
+        { lat: 43.551553466191095, lng: -79.65937119467205 }
+    ]);
+
+    const toggle = () => {
+        setSeeingFriends(!seeingFriends)
+    }
+
     return (
         <div className="map-container">
             <div className="map-wrapper">
                 {loc.lat && loc.lng && (
                     <img className="map" 
-                         src={`https://maps.googleapis.com/maps/api/staticmap?center=University%20of%20Toronto%20Mississauga&zoom=16.8&size=800x800&maptype=satellite&markers=color:red%7Clabel:S%7C${loc.lat},${loc.lng}&${additionalMarkersString}&key=AIzaSyCklw5wDpiZXutdUxDKiW2PKpHh0Ap-wEw`} 
+                         src={`https://maps.googleapis.com/maps/api/staticmap?center=University%20of%20Toronto%20Mississauga&zoom=16.8&size=800x800&maptype=satellite&markers=color:red%7Clabel:S%7C${loc.lat},${loc.lng}&${seeingFriends ? lol : additionalMarkersString}&key=AIzaSyCklw5wDpiZXutdUxDKiW2PKpHh0Ap-wEw`} 
                          alt="Map"/>
+
                 )}
             </div>
+            <button className="toggle-friends" onClick={toggle}>Toggle Trusted Only</button>
         </div>
     );
 }
