@@ -4,41 +4,53 @@
         "title": "Welcome to SC^2!!",
         "content": "Hello and a warm welcome to all new members! This is our very first post in what we hope will become a thriving online community. This forum is a space for you to introduce yourself, share your interests, and connect with others. Whether you're here to seek advice, share expertise, or just chat about your day, we're excited to have you with us. Don't hesitate to start new discussions, ask questions, and provide answers. Let's build a supportive and engaging community together!",
         "date": "2024-02-01T09:00:00.000Z",
-        "author": "Admin"
+        "author": "Admin",
+        "lat": 45.4444101,
+        "lng":-75.69387789999999
     },
     {
         "id": 2,
         "title": "Tips for New Users",
         "content": "Welcome to our forum! If you're new here, you might be wondering how to get the most out of our community. Check out this post for a comprehensive guide on navigating the forum, utilizing its features, and understanding the etiquette we follow here. Learn how to create and respond to posts, customize your profile, and connect with other members. This guide is a great starting point for making your experience here both enjoyable and rewarding. Feel free to ask any questions if you're unsure about anything!",
         "date": "2024-02-02T10:00:00.000Z",
-        "author": "Moderator"
+        "author": "Moderator",
+        "lat": 45.4444101,
+        "lng":-75.69387789999999
     },
     {
         "id": 3,
         "title": "Weekly Discussion Thread",
         "content": "Join our vibrant weekly discussion! This week, we dive into the captivating topic of 'The Future of Technology'. What innovations do you think will shape our world in the coming years? From artificial intelligence to space travel, share your thoughts, predictions, and hopes for the future of technology. Engage with fellow tech enthusiasts, debate on possible advancements, and explore the implications of technological growth. Let's brainstorm the future together!",
         "date": "2024-02-03T11:30:00.000Z",
-        "author": "TechGuru"
+        "author": "TechGuru",
+        "lat": 45.4444101,
+        "lng":-75.69387789999999
     },
     {
         "id": 4,
         "title": "Forum Rules and Guidelines",
         "content": "Welcome to our community! To ensure a positive and respectful environment for all, please make sure to read and adhere to our rules and guidelines. These guidelines are in place to maintain a safe and enjoyable experience for everyone. They cover our policies on acceptable content, behavior standards, and the process for reporting issues. Familiarizing yourself with these rules helps keep our community a great place for discussion and connection. Your cooperation is greatly appreciated!",
         "date": "2024-02-04T08:00:00.000Z",
-        "author": "CommunityManager"
+        "author": "CommunityManager",
+        "lat": 45.4444101,
+        "lng":-75.69387789999999
     },
     {
         "id": 5,
         "title": "Share Your Projects",
         "content": "Have you been working on something exciting? Whether it's a personal hobby, a professional project, or just a fun experiment, we'd love to hear about it! Share your projects with the community here and get feedback, suggestions, and support. This is a great opportunity to showcase your work, connect with like-minded individuals, and perhaps even collaborate on future endeavors. Don't be shy, let the community see what you've been up to!",
         "date": "2024-02-05T15:45:00.000Z",
-        "author": "CreativeUser"
+        "author": "CreativeUser",
+        "lat": 45.4444101,
+        "lng":-75.69387789999999
     },
     {
         "id": 6,
         "title": "Feedback and Suggestions",
         "content": "We highly value your feedback and suggestions for improving the forum. Your input is crucial in helping us create a better experience for all members. Whether it's about the forum's design, features, or community engagement, we want to hear your thoughts. Let us know what you love, what you think could be improved, and any new ideas you have. Together, we can make this forum a fantastic place for everyone to enjoy and benefit from!",
         "date": "2024-02-06T12:00:00.000Z",
-        "author": "FeedbackFan"
+        "author": "FeedbackFan",
+        "lat": 45.4444101,
+        "lng":-75.69387789999999
     }
 ]
