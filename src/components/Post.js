@@ -1,6 +1,7 @@
 // Post.js
 import React, { useState, useEffect } from 'react';
 import { useParams, useHistory } from 'react-router-dom';
+import Loading from './Loading';
 
 const Post = () => {
   const [post, setPost] = useState(null);
@@ -18,7 +19,7 @@ const Post = () => {
     fetchPost();
   }, [postId]);
 
-  if (!post) return <div>Loading...</div>;
+  if (!post) return <Loading/>
 
   const stringToColor = (str) => {
     // Hash the string
@@ -41,12 +42,32 @@ const Post = () => {
     history.goBack();
   }
 
+  const formatDateNicely = (dateTimeString) => {
+    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    const date = new Date(dateTimeString);
+
+    const year = date.getFullYear();
+    const month = months[date.getMonth()];
+    const day = date.getDate();
+    let hour = date.getHours();
+    const minute = date.getMinutes();
+
+    const amPm = hour >= 12 ? 'PM' : 'AM';
+    hour = hour % 12;
+    hour = hour ? hour : 12; // the hour '0' should be '12'
+
+    const formattedMinute = minute < 10 ? '0' + minute : minute;
+
+    return `${month}. ${day} ${year} @ ${hour}:${formattedMinute} ${amPm}`;
+}
+
+
   return (
     <>
     <div className='post-container'>
         <div className="post">
         <h2 style={{backgroundColor: stringToColor(post.title)}}>{post.title}</h2>
-        <h4>By {post.author} at {new Date(post.date).toLocaleString()}</h4>
+        <h4>By {post.author} at {formatDateNicely(new Date(post.date))}</h4>
         <p>{post.content}</p>
         </div>
         <button onClick={goBack} type="button">&lt; Back</button>

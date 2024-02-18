@@ -30,6 +30,7 @@ const NavBar = () => {
     logout,
   } = useAuth0();
   const toggle = () => setIsOpen(!isOpen);
+  const turnOff = () => setIsOpen(false);
 
   const logoutWithRedirect = () =>
     logout({
@@ -44,7 +45,7 @@ const NavBar = () => {
         <Container>
           <NavbarBrand className="logo" />
           <NavbarToggler onClick={toggle} />
-          <Collapse isOpen={isOpen} onClick={toggle} navbar>
+          <Collapse isOpen={isOpen} onClick={turnOff} navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>
                 <NavLink
