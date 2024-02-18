@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Post } from "./Post"
 import Loading from "./Loading";
 
-const Forums = () => {
+const Friends = () => {
     const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -14,19 +14,8 @@ const Forums = () => {
             // Replace with your API call to fetch posts
             const response = await fetch('./tempposts.json');
             const data = await response.json();
-
-            setLoading(false);
-
-            await Promise.all(data.map(async (post) => {
-                const response2 = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${post.lat},${post.lng}&key=AIzaSyCklw5wDpiZXutdUxDKiW2PKpHh0Ap-wEw`);
-
-                const data2 = await response2.json();
-                post.address = data2.results[0].formatted_address;
-        
-            }));
-
             setPosts(data);
-    
+            setLoading(false);
         };
 
         fetchPosts();
@@ -73,10 +62,7 @@ const Forums = () => {
     }
 
 
-    const getAddress = async (lat, lng) => {
 
-        return "hi";
-    }
 
 
     return (
@@ -89,7 +75,6 @@ const Forums = () => {
                                 <h3>{post.title}</h3>
                                 <h4>By <span style={{ fontWeight: "bold" }}>{post.author}</span> at {formatDateNicely(new Date(post.date))}</h4>
                             </div>
-                            <p>{post.address}</p>
                             <p>{post.content}</p>
                         </div>
                     </Link>
@@ -99,5 +84,5 @@ const Forums = () => {
     );
 };
 
-export default Forums;
+export default Friends;
 
