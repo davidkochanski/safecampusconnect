@@ -1,6 +1,6 @@
 # Safe Campus Connect (SC²)
 
-## DeerHack 2024 Submission
+## DeerHacks 2024 Submission
 
 We wanted to make a web app that is useful for students to stay safe on campus. Choosing the Socially Responsible Platforms theme, we were inspired by the theme's implications of a socially responsible social media app, focused on safety and sustainability.
 What it does
